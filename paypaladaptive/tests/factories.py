@@ -1,16 +1,18 @@
 from paypaladaptive.models import Payment, Preapproval, PaypalAdaptive
 import factory
 import uuid
-from money.Money import Money
+from moneyed.classes import Money
+from djmoney.models.fields import currency_field_name
 import datetime
 
 
 class PaypalAdaptiveFactory(factory.DjangoModelFactory):
     FACTORY_FOR = PaypalAdaptive
 
-    money = Money(1400, 'SEK')
-    money_currency = 'SEK'
+    money = 1400
     created_date = datetime.datetime.now()
+
+setattr(PaypalAdaptiveFactory, currency_field_name('money'), 'SEK')
 
 
 class PaymentFactory(PaypalAdaptiveFactory):

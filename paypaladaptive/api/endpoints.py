@@ -5,7 +5,7 @@ import logging
 
 from django.utils import simplejson as json
 
-from money.Money import Money
+from moneyed.classes import Money
 
 from paypaladaptive import settings
 

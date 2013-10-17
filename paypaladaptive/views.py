@@ -17,7 +17,6 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 
 import settings
-import api
 from api.ipn import constants
 from models import Payment, Preapproval
 from decorators import takes_ipn

@@ -3,7 +3,7 @@ from django.contrib.sites.models import Site
 from django.core.urlresolvers import reverse
 from django.http import HttpRequest
 
-from money.Money import Money
+from moneyed.classes import Money
 import mock
 import urlparse
 

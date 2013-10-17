@@ -1,5 +1,4 @@
 from django.conf import settings
-from money import set_default_currency
 
 
 DEBUG = getattr(settings, "DEBUG", False)
@@ -28,9 +27,6 @@ USE_IPN = getattr(settings, 'PAYPAL_USE_IPN', True)
 USE_CHAIN = getattr(settings, 'PAYPAL_USE_CHAIN', True)
 USE_EMBEDDED = getattr(settings, 'PAYPAL_USE_EMBEDDED', True)
 SHIPPING = getattr(settings, 'PAYPAL_USE_SHIPPING', False)
-
-DEFAULT_CURRENCY = getattr(settings, 'DEFAULT_CURRENCY', 'USD')
-set_default_currency(code=DEFAULT_CURRENCY)
 
 DECIMAL_PLACES = getattr(settings, 'PAYPAL_DECIMAL_PLACES', 2)
 MAX_DIGITS = getattr(settings, 'PAYPAL_MAX_DIGITS', 10)

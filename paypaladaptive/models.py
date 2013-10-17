@@ -7,7 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.sites.models import Site
 from django.utils import simplejson as json
 
-from money.contrib.django.models.fields import MoneyField
+from djmoney.models.fields import MoneyField
 
 import settings
 import api

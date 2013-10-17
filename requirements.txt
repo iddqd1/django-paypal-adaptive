@@ -1,4 +1,5 @@
-Django==1.4.3
+Django==1.5.1
 python-dateutil==2.1
 pytz==2013b
--e git+http://github.com/poswald/python-money.git@29d3671e140307b958b51a32e6d1ac8553edc9e5#egg=python_money-dev
+-e git+https://github.com/jakewins/django-money.git@323a4012df49a0bbab332d162739910067fcfcad#egg=django_money
+-e git+https://github.com/limist/py-moneyed.git@f51ec0e7cf5fdf570fd2a74de779c44b9cd74a65#egg=py-moneyed
