@@ -159,6 +159,7 @@ class TestPaymentIPN(test.TestCase):
 class TestPreapprovalIPN(test.TestCase):
     def setUp(self):
         self.preapproval = PreapprovalFactory.create(status='created')
+        self.preapproval.money = Money(1400, 'SEK')
 
     def mock_ipn_call(self, data, url=None):
         url = url if url is not None else self.preapproval.ipn_url
